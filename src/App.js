@@ -1,36 +1,23 @@
-import React, { useState, useEffect } from "react";
+import { Switch, Route, HashRouter as Router } from "react-router-dom";
+import React from "react";
 import "./App.css";
-import Team from "./pages/Team/Team";
 import NewBlog from "./pages/NewBlog/NewBlog";
+import BlogList from "./pages/Blogs/BlogList";
 import NewHome from "./pages/Home/NewHome";
 import JoinUs from "./pages/JoinUs/JoinUs";
-import { Switch, Route, HashRouter as Router } from "react-router-dom";
-import COC from "./pages/COC/COC";
-import About from "./pages/About/About";
-// import Donut from './pages/Donut/Donut';
-import Blog from "./pages/Blogs/Blog";
-import BlogList from "./pages/Blogs/BlogList";
-// import Codebadge from './pages/Codebadge/Codebadge';
 import NavBar from "./components/NavBar";
+import About from "./pages/About/About";
 import Footer from "./components/Footer";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import Blog from "./pages/Blogs/Blog";
+import Team from "./pages/Team/Team";
+import COC from "./pages/COC/COC";
 
-// import Header from "./Header/header"
 function App() {
-  const [scroll, setScroll] = useState("");
-
-  window.onscroll = () => {
-    if (window.scrollY > 0) {
-      setScroll("navbar-scroll");
-    } else {
-      setScroll("");
-    }
-  };
   return (
     <>
       <div className="App" style={{ width: "100%" }}>
         <Router>
-          <NavBar onScroll={scroll} />
+          <NavBar />
           <Switch>
             <Route path="/about">
               <About />

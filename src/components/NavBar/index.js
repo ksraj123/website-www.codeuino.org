@@ -19,13 +19,13 @@ const NavBar = ({ onScroll }) => {
   return (
   <React.Fragment>
     <Navbar expand="lg" variant="light" bg="light">
-      <Navbar.Brand>
+      <Navbar.Brand className="mr-0">
         <Link to="/">
           <Image
             id="logo"
             src={logo}
             alt="codeuino logo"
-            style={{ heigth: "20vh", width: "10vw" }}/>
+            style={{ heigth: "20vh", width: "12vw" }}/>
         </Link>
       </Navbar.Brand>
     </Navbar>
@@ -38,7 +38,7 @@ const NavBar = ({ onScroll }) => {
               id="logo"
               src={logo}
               alt="codeuino logo"
-              style={{ heigth: "20vh", width: "10vw" }}/>
+              style={{ heigth: "20vh", width: "12vw" }}/>
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle
