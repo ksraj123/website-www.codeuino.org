@@ -16,18 +16,14 @@ const TeamCard = (props) => {
         <Card.Text className="mt-2">{props.member.headline}</Card.Text>
         <Card.Text style={{marginTop: 20}}>
           <a
-            class="btn btn-primary ml-0 mr-3"
-            href={props.member.github}
-            role="button"
-            style={{ borderRadius: "50%", backgroundColor: " #22247A" }}>
-            <i class="fab fa-github" aria-hidden="true"></i>
+            class="custom-links mr-2 ml-2"
+            href={props.member.github}>
+              Github
           </a>
           <a
-            class="btn btn-primary mr-3"
-            href={props.member.linkedin}
-            role="button"
-            style={{ borderRadius: "50%", backgroundColor: " #22247A" }}>
-            <i class="fab fa-linkedin" aria-hidden="true"></i>
+            class="custom-links mr-2 ml-2"
+            href={props.member.linkedin}>
+              Linkedin
           </a>
         </Card.Text>
       </Card.Body>

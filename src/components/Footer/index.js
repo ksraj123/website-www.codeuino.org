@@ -45,8 +45,8 @@ const Footer = () => {
           </Col>
         </Row>
         <Row>
-          <Col md={6} lg={8}></Col>
-          <Col md={6} lg={4}>
+          <Col md={0} lg={8}></Col>
+          <Col md={12} lg={4}>
             <Row>
               <Col className="footer-icon" sm={2} xs={4}>
                 <a href="https://twitter.com/codeuino?lang=en">
