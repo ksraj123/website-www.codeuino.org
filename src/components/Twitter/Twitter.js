@@ -26,6 +26,9 @@ class Twitter extends React.Component {
             let allWithHashtags = Response.data;
             allWithHashtags = allWithHashtags.filter(tweet => tweet.entities.hashtags.length !== 0)
             console.log(allWithHashtags);
+            allWithHashtags = allWithHashtags.filter((ele) => {
+                return ele.entities.hashtags.some(arrEle => arrEle.text === "GSoC" || arrEle.text === "Codeuino" || arrEle.text === "Opensource")
+            })
             this.tweets=allWithHashtags;
             this.loadTweets();
         })
@@ -52,9 +55,9 @@ class Twitter extends React.Component {
             {
                     <React.Fragment>
                         {this.state.tweetsDisplay.map((tweet, index) => <TwitterTweetEmbed key={index} tweetId={tweet.id_str}/>)}
-                        <Button id="loadTweets" variant="outline-primary" onClick={this.loadTweets}>
+                        {this.tweets && <Button id="loadTweets" variant="outline-primary" onClick={this.loadTweets}>
                             Load More
-                        </Button>
+                        </Button>}
                     </React.Fragment>
             }
             </div>
