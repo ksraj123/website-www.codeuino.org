@@ -7,7 +7,6 @@ import Activities from "./Components/Activities";
 import Collaborate from "./Components/Collaborate";
 import Partners from "./Components/Partners";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
-import Twitter from '../../components/Twitter/Twitter';
 const NewHome = () => {
 
   return (
@@ -18,7 +17,7 @@ const NewHome = () => {
           tabindex="-1"
           role="group"
           id="gatsby-focus-wrapper">
-          <div class="mt-12">
+          <div class="mt-10">
             <LandingPageComponent />
             <div id="projects">
               <Projects />
@@ -39,13 +38,13 @@ const NewHome = () => {
             </span>
               <h1 className="mb-10 component-heading">Latest Updates</h1>
               <div className="row">
-                {/* <div className="col-md-4">
+                <div className="col-md-4">
                   <TwitterTimelineEmbed
                     sourceType="collection"
                     id="1281781304074203136"
                     options={{ height: 500, width: 500, fontSize:1 }}/>
-                </div> */}
-                {/* <div className="col-md-4">
+                </div>
+                <div className="col-md-4">
                 <TwitterTimelineEmbed
                   sourceType="profile"
                   screenName="codeuino"
@@ -57,8 +56,7 @@ const NewHome = () => {
                     sourceType="collection"
                     id="1281791360639500288"
                     options={{ height: 500, width: 500, fontSize:1 }}/>
-                </div> */}
-                <Twitter />
+                </div>
               </div>
             </div>
           </div>
