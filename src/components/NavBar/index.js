@@ -3,7 +3,7 @@ import { Image, Navbar, Container, Nav } from "react-bootstrap";
 import "./NavBar.css";
 import logo from "../../newlogo.png";
 import { HashLink as Link } from "react-router-hash-link";
-const NavBar = ({ onScroll }) => {
+const NavBar = () => {
 
   const navbarRef = useRef(null);
   
@@ -30,7 +30,7 @@ const NavBar = ({ onScroll }) => {
       </Navbar.Brand>
     </Navbar>
 
-    <Navbar variant="light" bg="light" expand="lg" fixed="top" className={`${onScroll}`} id="myNav" ref={navbarRef}>
+    <Navbar variant="light" bg="light" expand="lg" fixed="top" id="myNav" ref={navbarRef}>
       <Container>
         <Navbar.Brand>
           <Link to="/">

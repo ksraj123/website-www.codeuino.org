@@ -19,9 +19,6 @@ function App() {
         <Router>
           <NavBar />
           <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
             <Route path="/team">
               <Team />
             </Route>
@@ -30,27 +27,6 @@ function App() {
             </Route>
             <Route path="/codeofconduct">
               <COC />
-            </Route>
-            <Route path="/bloglist">
-              <BlogList />
-            </Route>
-            <Route path="/blog">
-              <Blog />
-            </Route>
-            <Route path="/newblog">
-              <NewBlog />
-            </Route>
-            <Route path="/gsoc19">
-              <NewHome />
-            </Route>
-            <Route path="/gssoc19">
-              <NewHome />
-            </Route>
-            <Route path="/gci19">
-              <NewHome />
-            </Route>
-            <Route path="/kwoc19">
-              <NewHome />
             </Route>
             <Route exact path="/">
               <NewHome />

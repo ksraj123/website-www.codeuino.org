@@ -5,7 +5,9 @@ const TeamCard = (props) => {
   //console.log(props);
   return (
     <Card style={{ marginBottom: "2vh", border: "0px", textAlign: "left" }}>
-      <Card.Img style={{borderRadius: "1rem"}} src={props.member.profile} className="mx-auto" />
+      <Card.Img 
+        style={{borderRadius: "1rem", width: "50%"}} 
+        src={props.member.profile} className="mx-auto" />
       <Card.Body>
         <Card.Title className="team-card-name mt-4 mr-1">{props.member.name}</Card.Title>
         <Card.Text>
