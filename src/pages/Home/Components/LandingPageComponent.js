@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../images/banner.svg";
 import poster from "../images/poster.svg";
 import { HashLink as Link } from "react-router-hash-link";
+import { directive } from "@babel/types";
 
 const LandingPageComponent = () => {
   return (
@@ -47,7 +48,7 @@ const LandingPageComponent = () => {
               <span className="fe fe-slack mr-1"></span>Slack
               </a>
             </div>
-            <div className="text-center text-md-left mt-10 mt-md-8">
+            {/* <div className="text-center text-md-left mt-10 mt-md-8">
               <h2>Our Mission</h2>
               <p style={{ textAlign: "justify" }}>
                 Communications technology has enabled new approaches to communities and 
@@ -58,11 +59,32 @@ const LandingPageComponent = () => {
                 to benefit organizations and individuals to have a common platform for 
                 collaboration.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
     </section>
+    <div class="mt-10 container lift" style={{borderRadius:"25px",textAlign:"left",color:"white",backgroundColor:" #22247A",width:"100%"}}>
+			<div class="row pt-6 pb-6 pl-md-8">
+            <div className="col-md-3 text-center p-0" style={{display: 'flex', flexDirection: 'column', justifyContent: 'start'}}>
+				      <h1 className="m-0">Mission</h1>
+              <p className="m-0">Of our Community</p>
+            </div>
+            {/* <div className="col-md-1 p-0">
+              <div style={{width: '3px', height: '100%', backgroundColor: 'white'}}></div>
+            </div> */}
+				    <p className="col-md-9 pl-md-0" style={{textAlign: 'justify'}}>
+              Communications technology has enabled new approaches to communities and 
+              end-users in which stakeholders across sectors and organizations are engaged 
+              in consensus building and implementation processes for open source ecosystem. 
+              So Codeuino works with a vision to have open sustainability within social 
+              networking and build OSS/FOSS social-environmental tools with a sole motive 
+              to benefit organizations and individuals to have a common platform for 
+              collaboration.
+            </p>
+
+			</div>
+		</div>
     <section class="pt-10"
       id="aboutUs"
       style={{ width: "100%", alignContent: "left" }}>
